@@ -1,0 +1,277 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Comme', sans-serif;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  min-height: 38rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  background: #ffffff;
+  width: 40vw;
+  min-width: 25rem;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-1,
+.form-client {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  color: #7c7c7c;
+}
+
+p span {
+  border: 2px solid #7c7c7c;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .form-container {
+    background: #ffffff;
+    width: 90vw;
+    /* height: auto; */
+    min-width: 17rem;
+  }
+
+  p span {
+    padding: 1px;
+  }
+}
+
+.form-1 input,
+.form-1 textarea,
+.client-option select,
+.client-option input,
+.rates select,
+.rates input,
+.form-1 select {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #606060;
+}
+
+.client-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rates {
+  display: flex;
+}
+
+.rates select {
+  width: 50%;
+}
+
+.rates input {
+  margin-left: 5px;
+  width: 30%;
+}
+
+.client-option select {
+  width: 60%;
+}
+
+.client-option input {
+  width: 28%;
+  margin-right: 5px;
+}
+
+.form-1 textarea {
+  height: 10vh;
+}
+
+.error {
+  color: red;
+  position: absolute;
+  display: flex;
+  top: 2px;
+  right: 4px;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dates input {
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.check-box input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#checkbox-input {
+  border: 2px solid blue;
+}
+
+.form-container .button-group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  position: absolute;
+  left: 0px;
+  font-size: 14px;
+  color: #7c7c7c;
+}
+
+.form-container button {
+  padding: 12px 25px;
+  background: #1f8bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background: #0056b3;
+}
+
+.tracking-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tracking-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #dbdbdb;
+  border-radius: 50%;
+}
+
+.tracking-dots .active {
+  background: #949494;
+  width: 18px;
+  border-radius: 20px;
+}
+
+
+.option-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.option-item {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+
+.option-item.selected {
+  background-color: #d0d0d0;
+  border-color: #606060;
+}
+
+.add-people input {
+  width: 70%;
+}
+
+.add-people {
+  display: flex;
+  align-items: center;
+}
+
+.add-people button {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.remove {
+  position: absolute;
+  right: 5px;
+  color: red;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.selected-team {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.selected-member {
+  border: 2px solid black;
+  margin-left: 2px;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.cancel {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-left: 5px;
+}
