@@ -1,0 +1,243 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.create-account-form {
+  position: relative;
+  height: 100vh;
+  min-height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.create-account-form h2 {
+  color: #6d6d6d;
+  margin-bottom: 60px;
+  font-size: 30px;
+}
+
+
+.form-step {
+  border: 2px solid black;
+  background: white;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+
+
+.form-step h3 {
+  color: #c4c4c4;
+  margin-top: 20px;
+}
+
+.form-step h2 {
+  color: #575757;
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.title {
+  width: 40vw;
+  min-width: 16rem;
+  color: #787878;
+  font-size: 16px;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+.tracking-pages {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  background-color: #eeeeee;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.tracking-pages div {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.tracking-pages div h2 {
+  color: white;
+  border: 2px solid #938e99;
+  background-color: #938e99;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+}
+
+.tracking-pages div h3 {
+  margin-top: 0px;
+}
+
+.tracking-pages .active {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: black;
+  color: white;
+}
+
+.tracking-pages .active1 {
+  border-top-left-radius: 20px;
+  background: black;
+  color: white;
+}
+
+.tracking-pages .active2 {
+  background: black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  display: grid;
+  text-align: left;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  width: 70%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #575757;
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="button"],
+button[type="submit"] {
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  bottom: -5rem;
+  right: 0px;
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover {
+  background-color: #5a0ca0;
+}
+
+.back-to-login {
+  display: block;
+  margin-top: 20px;
+  color: #0d7aad;
+  text-decoration: none;
+  text-align: left;
+  width: 83vw;
+  margin-top: 48px;
+}
+
+.back-to-login:hover {
+  text-decoration: underline;
+}
+
+#prev {
+  margin-right: 10rem;
+}
+
+.form-group div {
+  position: relative;
+}
+
+.form-group div p {
+  position: absolute;
+  right: 0px;
+  color: red;
+  top: 4.2rem;
+}
+
+
+@media (max-width: 870px) {
+  .form-step {
+    width: 90vw;
+  }
+
+  .back-to-login {
+    width: 90vw;
+  }
+
+  .create-account-form {
+    min-height: 46rem;
+  }
+
+  .form-group {
+    gap: 10px;
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .form-step {
+    width: 99vw;
+  }
+
+  .form-group {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    width: 90%;
+  }
+
+  .create-account-form {
+    min-height: 60rem;
+  }
+
+  .tracking-pages div {
+    width: 33%;
+    padding: 5px;
+  }
+
+  #prev {
+    margin-right: 4.6rem;
+  }
+
+  button[type="button"],
+  button[type="submit"] {
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+
+}
